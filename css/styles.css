@@ -83,9 +83,8 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.position-link-mail {
+  display: flex;
+  flex-direction: row-reverse;
   margin-right: 30px;
 }
 
@@ -97,6 +96,8 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .navigation-position:not(:last-child) {
@@ -117,6 +118,7 @@ ol {
 
 .position-link-mail {
   display: flex;
+  margin-right: 30px;
 }
 
 .position-link-phone {
@@ -139,16 +141,21 @@ ol {
   color: var(--main-color);
 }
 
-.logo-thre-letters {
+.logo-three-letters {
   color: var(--main-color-hover-focus);
 }
 
 .navigation-bar-studio:hover,
 .navigation-bar-portfolio:hover,
 .navigation-bar-contacts:hover,
-.position-link-mail:hover .mail-link,
-.position-link-phone:hover .phone-link {
+.mail-link:hover,
+.phone-link:hover {
   color: var(--main-color-hover-focus);
+}
+
+.mail-link:hover svg,
+.phone-link:hover svg {
+  fill: var(--main-color-hover-focus);
 }
 
 .navigation-bar-portfolio:focus,
@@ -159,10 +166,17 @@ ol {
   color: var(--main-color-hover-focus);
 }
 
-.position-link-mail:hover .mail-hover-icon,
-.position-link-phone:hover .phone-hover-icon,
-.mail-focus-icon:focus svg,
-.phone-focus-icon:focus svg {
+.mail-link:focus,
+.phone-link:focus {
+  color: var(--main-color-hover-focus);
+}
+
+.mail-link:focus svg,
+.phone-link:focus svg {
+  fill: var(--main-color-hover-focus);
+}
+
+.mail-link:focus {
   fill: var(--main-color-hover-focus);
 }
 
@@ -231,7 +245,6 @@ ol {
 
 .ways-card-position {
   width: 270px;
-  height: 101px;
 }
 
 .ways-card-position:not(:nth-last-child(1)) {
@@ -282,7 +295,6 @@ ol {
 /*=============OUR WORK==========================*/
 
 .our-work-position {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -628,6 +640,14 @@ ol {
 }
 
 .button-service-portfolio:hover {
+  background: #2196f3;
+  color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.button-service-portfolio:focus {
   background: #2196f3;
   color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
