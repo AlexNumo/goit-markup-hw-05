@@ -19,7 +19,7 @@
             <nav class="navigation-bar">
                 <a href="index.html"><span class="logo-three-letters">Web</span>Studio</a>
                 <ul class="navigation-link">
-                    <li class="navigation-position"><a class="navigation-bar-studio" href="index.html">Студия</a></li>
+                    <li class="navigation-position active-page"><a class="navigation-bar-studio" href="index.html">Студия</a></li>
                     <li class="navigation-position"><a class="navigation-bar-portfolio" href="portfolio.html">Портфолио</a></li>
                     <li class="navigation-position"><a class="navigation-bar-contacts" href="">Контакты</a></li>
                 </ul>
@@ -47,7 +47,7 @@
     <section class="business-background">
         <div class="container background-image">
             <h1 class="business">Эффективные решения<br> для вашего бизнеса</h1>
-            <button class="button-service" type="button">Заказать услугу</button>
+            <button class="button-service" type="button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
 <!--========WAYS FOR BUSINESS========================-->  
@@ -99,9 +99,15 @@
         <div class="container">
             <h2 class="our-work">Чем мы занимаемся</h2>
             <ul class="our-work-image">
-                <li class="our-work-image-position"><img src="./img/maket_1.jpg" alt="Стол с компъютером и таблицей" width="370" height="294"></li>
-                <li class="our-work-image-position"><img src="./img/maket_2.jpg" alt="Ноутбук с телефоном в руках" width="370" height="294"></li>
-                <li class="our-work-image-position"><img src="./img/maket_3.jpg" alt="Планшет с матрицей цветов" width="370" height="294"></li>
+                <li><img src="./img/maket_1.jpg" alt="Стол с компъютером и таблицей" width="370" height="294">
+                    <p class="our-work-description">Десктопные приложения</p>
+                </li>
+                <li><img src="./img/maket_2.jpg" alt="Ноутбук с телефоном в руках" width="370" height="294">
+                    <p class="our-work-description">Мобильные приложения</p>
+                </li>
+                <li><img src="./img/maket_3.jpg" alt="Планшет с матрицей цветов" width="370" height="294">
+                    <p class="our-work-description">Дизайнерские решения</p>
+                </li>
             </ul>
         </div>
     </section>
@@ -227,32 +233,32 @@
         <div class="container">
             <h2 class="clients-name-section">Постоянные клиенты</h2>
         <div class="clients-position">
-            <a class="clients-logo-position" href="./">
+            <a class="clients-logo-position" href="#">
                 <svg class="clients-logo" width=106px height=60px>
                     <use href="./img/sprite.svg#client1"></use>
                 </svg>
             </a>
-            <a class="clients-logo-position" href="./">
+            <a class="clients-logo-position" href="#">
                 <svg class="clients-logo" width=106px height=60px>
                     <use href="./img/sprite.svg#client2"></use>
                 </svg>
             </a>
-            <a class="clients-logo-position" href="./">
+            <a class="clients-logo-position" href="#">
                 <svg class="clients-logo" width=106px height=60px>
                     <use href="./img/sprite.svg#client3"></use>
                 </svg>
             </a>
-            <a class="clients-logo-position" href="./">
+            <a class="clients-logo-position" href="#">
                 <svg class="clients-logo" width=106px height=60px>
                     <use href="./img/sprite.svg#client4"></use>
                 </svg>
             </a>
-            <a class="clients-logo-position" href="./">
+            <a class="clients-logo-position" href="#">
                 <svg class="clients-logo" width=106px height=60px>
                     <use href="./img/sprite.svg#client5"></use>
                 </svg>
             </a>
-            <a class="clients-logo-position" href="./">
+            <a class="clients-logo-position" href="#">
                 <svg class="clients-logo" width=106px height=60px>
                     <use href="./img/sprite.svg#client6"></use>
                 </svg>
@@ -300,6 +306,20 @@
             </div>
             </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+            <button class="close-button" type="button" data-modal-close>
+                <svg width=11px height=11px>
+                    <use href="./img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
